@@ -1,0 +1,112 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'hospitalinindex.html' %}
+{% block body %}
+
+<body>
+<div align="center">
+  <form id="form13" name="form13" method="post" action="adddoctor1">
+    <div align="center">
+      <table width="241"id="customers">
+        <tr>
+          <th width="85" scope="row">Fname</th>
+          <td width="144"><label>
+            <input type="text" name="textfield4" required  pattern="[A-Z a-z.]{3,25}"/>
+          </label>          </td>
+        </tr>
+        <tr>
+          <th scope="row">Lname</th>
+          <td><label>
+            <input type="text" name="textfield22"  required  pattern="[A-Z a-z.]{3,25}"/>
+            </label>          </td>
+        </tr>
+        <tr>
+          <th scope="row">DOB</th>
+          <td><label>
+            <input type="text" name="textfield32" min="1990-01-01" max="2019-12-31" required  />
+          </label>          </td>
+        </tr>
+        <tr>
+          <th scope="row">Gender</th>
+          <td><label>
+            <input name="radiobutton" type="radio" value="male" checked/>
+            </label>
+            Male
+            <label>
+              <input name="radiobutton" type="radio" value="female" />
+            </label>
+            Female </td>
+        </tr>
+        <tr>
+          <th scope="row">Qualification</th>
+          <td><label>
+            <input type="text" name="textfield52"  required  pattern="[A-Z a-z.]{3,25}"/>
+            </label>          </td>
+        </tr>
+        <tr>
+          <th scope="row">Specification</th>
+          <td><label>
+            <input type="text" name="textfield62"  required  pattern="[A-Z a-z.]{3,25}"/>
+            </label>          </td>
+        </tr>
+        <tr>
+          <th scope="row">Place</th>
+          <td><input type="text" type="textfield72" required  pattern="[A-Z a-z.]{3,25}"/>
+            <label>
+
+              </label>          </td>
+        </tr>
+        <tr>
+          <th scope="row">Post</th>
+          <td><label>
+            <input type="text" name="textfield82" required  required  pattern="[A-Z a-z.]{3,25}"/>
+            </label>          </td>
+        </tr>
+        <tr>
+          <th scope="row">Pin</th>
+          <td><label></label>
+              <label>
+              <input type="text" name="textfield92"  required required pattern="[0-9]{6}"/>
+              </label>          </td>
+        </tr>
+        <tr>
+          <th scope="row">Email</th>
+          <td><label>
+            <input type="text" name="textfield112" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"/>
+            </label>          </td>
+        </tr>
+        <tr>
+          <th scope="row">Phone</th>
+          <td><label>
+            <input type="text" name="textfield122" required pattern="[6789][0-9]{9}"/>
+            </label>          </td>
+        </tr>
+         <tr>
+          <th scope="row">username</th>
+          <td><label>
+            <input type="text" name="textfield123" required />
+            </label>          </td>
+        </tr>
+         <tr>
+          <th scope="row">password</th>
+          <td><label>
+            <input type="password" name="textfield124" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/>
+            </label>          </td>
+        </tr>
+
+      </table>
+      <p>
+        <label>
+        <input type="submit" name="Submit" value="Add" value="SignUp"/>
+        </label>
+      </p>
+    </div>
+  </form>
+</div>
+</body>
+{% endblock %}
+<!--</html>-->

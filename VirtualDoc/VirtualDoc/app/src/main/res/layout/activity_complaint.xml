@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".complaint"
+    android:background="@drawable/b">
+
+
+<TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="70dp"
+            android:layout_height="140dp"
+            android:background="@drawable/comp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:ems="10"
+            android:hint="            COMPLAINTS TYPE HERE..."
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND" />
+    </TableRow>
+</androidx.appcompat.widget.LinearLayoutCompat>

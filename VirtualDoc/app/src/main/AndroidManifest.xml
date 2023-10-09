@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.virtualdoc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VirtualDoc"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".upload_photo"/>
+        <activity android:name=".view_result"/>
+        <activity android:name=".viewpharmacy"/>
+        <activity android:name=".viewdept"/>
+        <activity android:name=".bankpayment"></activity>
+        <activity android:name=".viewdocshedule" />
+        <activity android:name=".viewdr" />
+        <activity android:name=".searchdr" />
+        <activity android:name=".addprescription" />
+        <activity android:name=".custom3" />
+        <activity android:name=".viewbookingstatus"/>
+        <activity android:name=".viewfacility"/>
+        <activity android:name=".ipAddress">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PREDICT" />
+        <activity android:name=".virtualdoctor" />
+        <activity android:name=".feedback" />
+        <activity android:name=".viewreply" />
+        <activity android:name=".complaint" />
+        <activity android:name=".VIEWPRISCRIPTION" />
+        <activity android:name=".NEWUSER" />
+        <activity android:name=".HOME" />
+        <activity android:name=".MainActivity" />
+        <service android:name=".LocactionService"/>
+    </application>
+
+</manifest>

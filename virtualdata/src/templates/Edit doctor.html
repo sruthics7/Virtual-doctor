@@ -1,0 +1,122 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'hospitalinindex.html' %}
+{% block body %}
+<body>
+<form id="form2" name="form2" method="post" action="/updatedoctor">
+<div align="center">
+   <td width="144">
+  <table width="241"id="customers">
+    <tr>
+      <th width="85" scope="row">Fname</th>
+<td>
+        <label>
+          <input type="text" name="textfield" value="{{val[2]}}" required  pattern="[A-Z a-z.]{3,25}" />
+          </label>
+           </td>
+    </tr>
+    <tr>
+      <th scope="row">Lname</th>
+      <td>
+        <label>
+          <input type="text" name="textfield2" value="{{val[3]}}" required  pattern="[A-Z a-z.]{3,25}" />
+          </label>
+            </td>
+    </tr>
+    <tr>
+      <th scope="row">DOB</th>
+      <td>
+        <label>
+          <input type="text" name="textfield3"value="{{val[4]}}" min="1990-01-01" max="2019-12-31" required />
+          </label>
+        </td>
+    </tr>
+    <tr>
+      <th scope="row">Gender</th>
+      <td>
+        <label>
+        <input name="radiobutton" type="radio" value="female" {% if val[5]=='female' %} checked{% endif %} checked/>
+
+        </label>
+      Male 
+      <label>
+      <input name="radiobutton" type="radio" value="male"  {% if val[5]=='male' %} checked{% endif %}/>
+      </label>
+      Female
+           </td>
+    </tr>
+    <tr>
+      <th scope="row">Qualification</th>
+      <td>
+        <label>
+          <input type="text" name="textfield5"value="{{val[6]}}" required pattern="[A-Z a-z.]{3,25}"/>
+          </label>
+          </td>
+    </tr>
+    <tr>
+      <th scope="row">Specification</th>
+      <td>
+        <label>
+          <input type="text" name="textfield6" value="{{val[7]}}"  required pattern="[A-Z a-z.]{3,25}"/>
+          </label>
+        </td>
+    </tr>
+    <tr>
+      <th scope="row">Place</th>
+      <td>
+        <label>
+          <input type="text" name="textfield7"value="{{val[8]}}"  required pattern="[A-Z a-z.]{3,25}"/>
+          </label>
+           </td>
+    </tr>
+    <tr>
+      <th scope="row">Post</th>
+<td>
+        <label>
+          <input type="text" name="textfield8"value="{{val[9]}}"  required pattern="[A-Z a-z.]{3,25}"/>
+          </label>
+          </td>
+    </tr>
+    <tr>
+      <th scope="row">Pin</th>
+      <td>
+        <label></label>
+        <label>
+        <input type="text" name="textfield9"value="{{val[10]}}" required pattern="[0-9]{6}"/>
+        </label>
+           </td>
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <td>
+        <label>
+          <input type="text" name="textfield11"value="{{val[11]}}" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"/>
+          </label>
+          </td>
+    </tr>
+    <tr>
+      <th scope="row">Phone</th>
+      <td>
+        <label>
+          <input type="text" name="textfield12"value="{{val[12]}}" required pattern="[6789][0-9]{9}"/>
+          </label>
+           </td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><form id="form1" name="form1" method="post" action="">
+        <label>
+          <input type="submit" name="Submit" value="Edit" />
+          </label>
+        </form>      </th>
+    </tr>
+  </table>
+
+</form>
+  </div>
+</body>
+{% endblock %}
+<!--</html>-->

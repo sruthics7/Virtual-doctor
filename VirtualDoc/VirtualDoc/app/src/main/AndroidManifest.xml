@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.virtualdoc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VirtualDoc"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".chat1"></activity>
+        <activity android:name=".chat" />
+        <activity android:name=".Schedule" />
+        <activity android:name=".buymed" />
+        <activity android:name=".doctors" />
+        <activity android:name=".payment" />
+        <activity android:name=".medicines" />
+        <activity android:name=".paymentdoc" />
+        <activity android:name=".Pharmacies" />
+        <activity android:name=".bankpayment" />
+        <activity android:name=".viewdocshedule" />
+        <activity android:name=".viewdr" />
+        <activity android:name=".searchdr" />
+        <activity android:name=".addprescription" />
+        <activity android:name=".custom3" />
+        <activity android:name=".ipAddress">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PREDICT" />
+        <activity android:name=".virtualdoctor" />
+        <activity android:name=".feedback" />
+        <activity android:name=".viewreply" />
+        <activity android:name=".complaint" />
+        <activity android:name=".VIEWPRISCRIPTION" />
+        <activity android:name=".NEWUSER" />
+        <activity android:name=".HOME" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

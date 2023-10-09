@@ -1,0 +1,44 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'hospitalinindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="addfacility1">
+<div align="center">
+  <table width="233">
+    <tr>
+      <th width="77" scope="row">Facility</th>
+      <th width="144">
+        <label>
+          <input type="text" name="textfield2" required  pattern="[A-Z a-z.]{3,25}" />
+          </label>
+        <label></label>
+             </th>
+    </tr>
+    <tr>
+      <th scope="row">Description</th>
+      <td>
+        <label>
+          <input type="text" name="textfield"  required  pattern="[A-Z a-z.]{3,25}" />
+          </label>
+
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row">
+        <label></label>
+        <label>
+        <input type="submit" name="Submit" value="add" value="SignUp" />
+        </label>
+      </th>
+    </tr>
+  </table>
+</div>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

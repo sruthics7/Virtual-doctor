@@ -1,0 +1,33 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head><form action="" method="get"></form>-->
+{% extends 'pharmacyinindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="/viewmedicineorder">
+  <div align="center">
+    <table width="200" border="1"id="customers">
+      <tr>
+        <th>medicine name </th>
+        <th>user</th>
+        <th>date</th>
+        <th>&nbsp;</th>
+      </tr>
+      {% for i in val %}
+      <tr>
+        <td>{{i[6]}}</td>
+        <td>&nbsp;{{i[7]}} {{i[8]}}</td>
+        <td>{{i[3]}}</td>
+        <td><p><a href="/acceptmedicineorder?id={{i[0]}}">accept</a></p>
+        <p><a href="/rejectmedicineorder?id={{i[0]}}">reject</a></p></td>
+      </tr>
+      {% endfor %}
+      </table>
+  </div>
+</form>
+</body>
+{% endblock %}
+<!--</html>-->

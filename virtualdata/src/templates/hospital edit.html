@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body><form id="form1" name="form1" method="post" action="/updatehospital">
+<div align="center">
+  <table width="214">
+    <tr>
+      <th width="156" scope="row">Name</th>
+      <td width="46"><label>
+        <input type="text" name="textfield" value="{{val[2]}}" required pattern="[A-Z a-z.]{3,25}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Place</th>
+      <td><label>
+        <input type="text" name="textfield2" value="{{val[3]}}" required pattern="[A-Z a-z.]{3,25}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Post</th>
+      <td><label>
+        <input type="text" name="textfield3" value="{{val[6]}}" required pattern="[A-Z a-z.]{3,25}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Pin</th>
+      <td><label>
+        <input type="text" name="textfield4" value="{{val[7]}}"  required pattern="[0-9]{6}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <td><label>
+        <input type="text" name="textfield6"value="{{val[4]}}" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Phone</th>
+      <td><label>
+        <input type="text" name="textfield7"value="{{val[5]}}"  required pattern="[6789][0-9]{9}" />
+      </label></td>
+    </tr>
+
+    <tr>
+      <th colspan="2" scope="row">
+        <label>
+        <input type="submit" name="Submit" value="Edit" />
+          </label>
+            <a href="#"></a></th>
+    </tr>
+  </table>
+</div>  </form>
+</body>
+</html>

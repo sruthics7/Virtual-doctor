@@ -1,0 +1,39 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'index.html' %}
+     {% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="log">
+    <div align="center">
+      <table width="210" id="customers">
+        <tr>
+          <th width="54"  scope="row">User name</th>
+          <td width="144"><label>
+            <input type="text" name="textfield" required />
+          </label></td>
+        </tr>
+        <tr>
+          <th scope="row">Password</th>
+          <td><label>
+            <input type="password" name="textfield3" required/>
+          </label></td>
+        </tr>
+        <tr>
+          <th height="45" colspan="2" scope="row"><label> </label>
+              <div align="center">
+                <input type="submit" name="Submit2" value="Login" />
+                <!--<a href="pharmacyregister">pharmacy reg</a><br />-->
+            </div></th>
+        </tr>
+          </table>
+    </div>
+  <label></label>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

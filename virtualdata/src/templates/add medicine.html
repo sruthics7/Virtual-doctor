@@ -1,0 +1,77 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'pharmacyinindex.html' %}
+{% block body %}
+
+<body>
+<div align="center">
+  <table width="200" border="1"id="customers">
+    <form id="form1" name="form1" method="post" action="/addmedicine1">
+    <tr>
+      <th scope="row">Medicine name </th>
+      <td>
+        <label>
+          <input type="text" name="textfield" required pattern="[A-Z a-z.]{3,25}" />
+          </label>
+              </td>
+    </tr>
+    <tr>
+      <th scope="row">Description</th>
+      <td>
+        <label>
+          <input type="text" name="textfield2" required pattern="[A-Z a-z.]{3,25}" />
+          </label>
+            </td>
+    </tr>
+    <!--<tr>-->
+      <!--<th scope="row">Photo</th>-->
+      <!--<td>-->
+        <!--<label>-->
+          <!--<input type="file" name="file" />-->
+          <!--</label>-->
+          <!--<label>-->
+          <!--</label>-->
+            <!--</td>-->
+    <!--</tr>-->
+    <tr>
+      <th scope="row">Price</th>
+      <td>
+        <label>
+          <input type="text" name="textfield4" required/>
+          </label>
+             </td>
+    </tr>
+    <tr>
+      <th scope="row">Expiry date </th>
+      <td>          <input type="date" name="textfield5" min="1990-01-01" max="2019-12-31" required />
+</td>
+    </tr>
+    <tr>
+      <th scope="row">Dosage</th>
+      <td>
+        <label>
+          <input type="text" name="textfield6" required/>
+          </label>
+              </td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row">
+        <label>
+          <input type="submit" name="Submit" value="add" />
+          </label>
+        </form>      </th>
+    </tr>
+  </table>
+</div>
+<form id="form6" name="form6" method="post" action="">
+  <label>
+
+  </label>
+</form>
+</body>
+{% endblock %}
+<!--</html>-->

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div align="center">
+  <form id="form1" name="form1" method="post" action="addhospital">
+    <table width="200" border="1">
+      <tr>
+        <th scope="row">Name</th>
+        <td>Place</td>
+        <td>Post</td>
+        <td>Pin</td>
+        <td>Email</td>
+        <td>Phone</td>
+
+      </tr>
+      {% for i in val %}
+      <tr>
+        <th scope="54" scope="row">{{i[2]}}</th>
+        <td>{{i[3]}}</td>
+        <td>{{i[6]}}</td>
+        <td>{{i[7]}}</td>
+        <td>{{i[4]}}</td>
+        <td>{{i[5]}}</td>
+
+        <td><p><a href="edithospital?id={{i[1]}}">Edit</a></p>
+            <p><a href="deletehospital?id={{i[1]}}">Delete</a></p></td>
+      </tr>
+      {% endfor %}
+    </table>
+    <p>
+      <label>
+      <input type="submit" name="Submit" value="add" />
+      </label>
+    </p>
+  </form>
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>
